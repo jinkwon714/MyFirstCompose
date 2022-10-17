@@ -13,6 +13,11 @@ fun main(){
     // val oneLong = 1L   <-- Long can contain the biggest size of bits; by using L after
 
 
+    // val e = 2.7182818284
+    // val eFloat = 2.7182818284
+    // println(e)
+    // println(eFloat)
+
     name = "James"
     age =21
 
