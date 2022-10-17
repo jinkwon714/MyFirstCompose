@@ -10,6 +10,7 @@ fun main(){
     val age:Int
     //val myByte: Byte
     // myByte = 127
+    // val oneLong = 1L   <-- Long can contain the biggest size of bits; by using L after
 
 
     name = "James"
