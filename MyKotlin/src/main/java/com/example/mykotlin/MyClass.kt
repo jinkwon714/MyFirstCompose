@@ -1,6 +1,7 @@
 package com.example.mykotlin
 
 fun main(){
-    val name = "Joe"
-    print("Hello $name")
+    //var name = "Kotlin"  -> mutable type: var
+    val myName = "John"  // , immutable type: val
+    print("Yo $myName")
 }
