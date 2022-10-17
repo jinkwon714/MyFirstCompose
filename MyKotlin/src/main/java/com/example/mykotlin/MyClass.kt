@@ -6,6 +6,11 @@ fun main(){
     // print("Yo $myName")
 
     // Variable type is redundant but it's useful for the further concept later on
-    val name: String = "James"
-    print("HELLO $name")
+    val name: String
+    val age:Int
+
+    name = "James"
+    age =21
+
+    print("HELLO $name I'm $age years old")
 }
