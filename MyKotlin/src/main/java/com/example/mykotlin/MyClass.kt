@@ -2,15 +2,14 @@ package com.example.mykotlin
 
 fun main(){
 
-val amount = 1000
-    when (amount) {
-        999 -> print("Really Close")
-        1000 -> print("Rich but not there...")
-        1100 -> print("You've made it!")
+    val amount = 99
+
+    when(amount) {
+        in 1..100 -> print("This amount is between 1 and 100")
+        !in 10..90 -> print("This amount is outside range")
+        999 -> print("Yo man you are rich")
         else -> {
-            print("$amount is just not going to work")
+            print("I don't know what have you done!")
         }
     }
-
-
 }
