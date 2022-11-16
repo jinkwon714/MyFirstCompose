@@ -5,19 +5,15 @@ fun main(){
 //    calculate(11, 1000, message = "is multiple of", multipleOf = 11)
 //    calculate(message = "is multiple of", multipleOf = 11)
 
-    val catAge = calculateCatAge(10)
-    if(checkAge(catAge))
-        print("This cat is old $catAge")
-    else
-        print("This cat is young $catAge")
+
+    println(sum(12,10))
+
+    println(add(12,22))
 }
 
+//val lamdaName : Type = { parameterList -> codeBody}
+val add : (Int, Int) -> Int = {a, b-> a+b}
 
-
-fun calculateCatAge(age: Int):Int{
-    return age *7
-}
-
-fun checkAge(catAge: Int): Boolean {
-    return catAge > 14
+fun sum(a: Int, b:Int): Int {
+    return a+b
 }
