@@ -6,17 +6,27 @@ fun main(){
 //    calculate(message = "is multiple of", multipleOf = 11)
 
 
-    println(sum(12,10))
+    enhancedMessage(message = "Hello There"){
+        println(it)
+        24
+    }
 
-    println(catAge(8))
-    println(add(12,22))
 }
 
-//val lamdaName : Type = { parameterList -> codeBody}
 
-val catAge: (Int) -> Int = {it -> it*2}
-val add : (Int, Int) -> Int = {a, b-> a+b}
+//val name: (String) -> Unit = {name -> println(name)}
+//val name: (String) -> Unit = {it
+//    println("Hello my name is $it")}
+//
+//fun showName(name: String){
+//    println(name)
 
-fun sum(a: Int, b:Int): Int {
-    return a+b
-}
+    fun enhancedMessage(message: String, funAsParameter: (String) -> Int){
+        println("$message ${funAsParameter("Hey")}")
+    }
+
+
+
+
+
+
